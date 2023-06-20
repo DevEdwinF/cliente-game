@@ -1,0 +1,74 @@
+.square-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/game_objects/game-background.jpg');
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.square-table{
+    display: flex;
+    flex-direction: column;
+    /* border: 3px solid blue; */
+    width: auto;
+    flex-direction: column-reverse;
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /* border: 1px solid yellow; */
+}
+
+.square{
+    /* border: 1px solid black; */
+    width: 120px;
+    height: 120px;
+}
+
+@keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  #square-1{
+    width: 180px;
+    height: 180px;
+    background-image: url(../../assets/game_objects/bloque-2.svg);
+    /* background-size: 115px 115px; */
+    /* background-position: 10px 10px; */
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /* animation: moveUpDown 2s infinite; */
+  }
+  
+ #square-3, #square-5, #square-7, #square-9, #square-10 {
+    background-image: url(../../assets/game_objects/bloque.svg);
+    background-size: 115px 115px;
+    background-position: 10px 2px;
+    background-repeat: no-repeat;
+    animation: moveUpDown 3s infinite;
+  }
+  
+
+#square-2, #square-4, #square-6, #square-8{
+    background-image: url(../../assets/game_objects/bloque.svg);
+    background-size: 115px 115px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    animation: moveUpDown 4s infinite;
+}
+
