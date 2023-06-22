@@ -1,14 +1,15 @@
-import Game from "./pages/Game"
-
 import './global.css'
+
+        
 
 function App() {
 
   return (
-    <>
-      <Game />
-    </>
+    <div className="App">
+    </div>
   )
+
 }
+
 
 export default App
